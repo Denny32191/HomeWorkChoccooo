@@ -321,6 +321,8 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 940px;
+  height: 640px;
 }
 
 .benefits__item {
@@ -374,8 +376,11 @@ footer {
 }
 
 .reviews__display {
-  background: #f8faf9;
+  background: #F8FAF9;
   padding: 50px 43px 34px;
+  margin-left: 79px;
+  margin-right: 79px;
+  margin-bottom: 14px;
 }
 
 .reviews__display-inner {
@@ -417,6 +422,15 @@ footer {
 .reviews__author {
   font-size: 18px;
   font-weight: bold;
+}
+
+.reviews__switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .interactive-avatar {

@@ -1,13 +1,19 @@
 .reviews__display {
-    background: #f8faf9;
+    background: #F8FAF9;
     padding: 50px 43px 34px;
+    margin-left: 79px;
+    margin-right: 79px;
+    margin-bottom: 14px;
+
 }
 .reviews__display-inner{
     display: flex;
+    
 }
 .reviews__avatar{
     width: 253px;
     height: 264px;
+    
 }
 .reviews__avatar-img{
     object-fit: cover;
@@ -30,4 +36,8 @@
 .reviews__author{
     font-size: 18px;
     font-weight: bold;
+}
+.reviews__switcher{
+    display: flex;
+    justify-content: center;
 }
