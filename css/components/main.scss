@@ -1,11 +1,12 @@
-$containerWidth: 940px;
+$containe-rWidth: 940px;
 $baseFontSize: 18px;
 
 //colors
 $yellow: #FFD517;
 $liteYellow: #FEDB3F;
-$darkGrey: #292929;
-$grey: #F2F5F4;
+
+//z-index
+$z-fixed-menu: 100;
 
 //normalize
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
@@ -26,3 +27,7 @@ $grey: #F2F5F4;
 @import "benefit";
 @import "reviews";
 @import "interactive-avatar";
+@import "form";
+@import "fixed";
+@import "radio";
+@import "fixed-menu";

@@ -4,7 +4,6 @@
 }
 .hero-img{
     background: url("./../../img/imgheader/arnaud-servf.png") center center / cover no-repeat;
-    background-color: $darkGrey;
     color: #fff;
     padding-bottom: rem(45px);
     height: 100vh;
@@ -26,7 +25,7 @@
 }
 .hero__title-desc{
     font-size: 21px;
-    margin-bottom: 39px;
+    padding-bottom: 39px;
     padding-right: 10%;
 }
 .hero__title-section{

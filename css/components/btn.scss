@@ -1,4 +1,4 @@
-.btn{
+.btn {
     font-size: 16px;
     font-weight: bold;
     padding: 21px 41px;
@@ -8,14 +8,40 @@
     text-decoration: none;
     background: #FEDB3F;
     color: black;
+    border: none;
+}
+.button{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 21px 41px;
+    text-transform: uppercase;
+    border-radius: 100px;
+    line-height: 1;
+    text-decoration: none;
+    border: none;
 
+
+    &--theme--transparent {
+    
+
+        &:hover {
+            color: black;
+            background: #e9cb46;
+        }
+    }
+
+}
+.btn--theme--yellow{
     &--theme-yellow {
-        background: #e9cb46;
+        background: white;
         color: #000000;
     }
-    &:hover{
+
+    &:hover {
         color: black;
         background: #e9cb46;
     }
 }
-
+.form__btns{
+    margin-left: 27px;
+}
