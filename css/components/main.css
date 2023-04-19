@@ -74,11 +74,14 @@ img {
 }
 
 .container {
-  position: relative;
   margin: 0 auto;
-  width: containerWidth;
+  width: 95%;
   height: 100%;
-}
+  max-width: 940px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} 
 
 .logo, .socials, .socials__link, .menu, .menu__item, .contacts {
   display: -webkit-box;
@@ -133,7 +136,7 @@ footer {
 }
 
 .hero-img {
-  background: url("./../../img/imgheader/cc54b080a52d3a32105f47fa904b563a.jpeg") center center/cover no-repeat;
+  background: url("./../../img/imgheader/arnaud-servf.png") center center/cover no-repeat;
   color: #fff;
   padding-bottom: rem(45px);
   height: 100vh;
@@ -612,6 +615,7 @@ footer {
       -ms-user-select: none;
           user-select: none;
   padding-bottom: 21px;
+  padding-right: 9px;
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
