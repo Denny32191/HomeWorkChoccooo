@@ -5,12 +5,17 @@ html {
 
 body {
 	font-size: $baseFontSize;
-	font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
+	font-family: "Alegreya Sans";
 	line-height: 1.42;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	position: relative;
 
+}
+.menu__link {
+	font-family: "Alegreya Sans";
+    font-style: bold;
+	font-weight: 700;
 }
 
 button {
@@ -89,7 +94,7 @@ img {
 
 
 .menu {
-    margin-left: 79px;
+    margin-left: 46px;
     display: flex;
     justify-content:flex-start;
     align-items:center;

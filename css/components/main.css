@@ -7,11 +7,17 @@ html {
 
 body {
   font-size: 18px;
-  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
+  font-family: "Alegreya Sans";
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
+}
+
+.menu__link {
+  font-family: "Alegreya Sans";
+  font-style: bold;
+  font-weight: 700;
 }
 
 button {
@@ -96,7 +102,7 @@ img {
 }
 
 .menu {
-  margin-left: 79px;
+  margin-left: 46px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,7 +223,6 @@ footer {
 
 .menu__link {
   text-decoration: none;
-  font-family: "Alegreya Sans";
 }
 
 .features {
