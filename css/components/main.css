@@ -12,7 +12,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  color: #666666;
 }
 
 button {
@@ -47,6 +46,7 @@ h6 {
 p {
   margin-top: 0;
   padding: 0;
+  color: #666666;
 }
 
 button {
@@ -88,20 +88,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.logo, .socials, .socials__link, .menu, .menu__item, .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.logo.logo__img {
-  float: left;
+  color: white;
 }
 
 .contacts {
@@ -143,7 +130,7 @@ footer {
 }
 
 .hero-img {
-  background: url("./../../img/imgheader/arnaud-servf.png") center center/cover no-repeat;
+  background: url("./../../img/imgheader/bg (1).png") center center/cover no-repeat;
   color: #fff;
   padding-bottom: rem(45px);
   height: 100vh;
@@ -230,6 +217,7 @@ footer {
 
 .menu__link {
   text-decoration: none;
+  font-family: "Alegreya Sans";
 }
 
 .features {
@@ -513,6 +501,10 @@ footer {
   margin-top: 60px;
 }
 
+.form__title_comment {
+  padding-left: 30px;
+}
+
 .section-form {
   color: #fff;
 }
@@ -532,6 +524,11 @@ footer {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 18px;
+}
+
+.order__title {
+  color: white;
+  margin-bottom: 63px;
 }
 
 .form__block {
@@ -574,7 +571,7 @@ footer {
 }
 
 .form-img {
-  background: url("./../../img/form/blackserf.jpeg") center center/cover no-repeat;
+  background: url("./../../img/imgheader/surfer.svg") center center/cover no-repeat;
 }
 
 .fixed-menu {
@@ -644,6 +641,7 @@ footer {
   position: relative;
   border-radius: 50%;
   background: #fff;
+  margin-right: 10px;
 }
 .radio__visible:before {
   content: "";

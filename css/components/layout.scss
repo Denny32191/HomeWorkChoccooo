@@ -10,8 +10,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	position: relative;
-	color: #666666;
-	;
+
 }
 
 button {
@@ -45,6 +44,7 @@ h6 {
 p {
 	margin-top: 0;
 	padding: 0;
+	color: #666666;
 }
 
 button {
@@ -80,16 +80,8 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	color: white;
   } 
-
-.logo,.socials,.socials__link,.menu, .menu__item,.contacts {
-  display: flex;
-  flex-direction: column;
-}
-
-.logo.logo__img {
-    float: left;
-}
 
 .contacts {
     float: right;

@@ -6,7 +6,9 @@
       color: #fff;
       margin-top: 60px;
     }
-  
+  .form__title_comment{
+    padding-left: 30px;
+  }
     .section-form {
       color: #fff;
     }
@@ -24,7 +26,10 @@
       display: flex;
       margin-bottom: 18px;
     }
-  
+  .order__title{
+    color: white;
+    margin-bottom: 63px;
+  }
     .form__block {
       flex: 1;
       margin-right: 20px;
@@ -63,5 +68,5 @@
     }
 
 .form-img{
-    background: url("./../../img/form/blackserf.jpeg")      center center / cover no-repeat ;
+    background: url("./../../img/imgheader/surfer.svg")      center center / cover no-repeat ;
 }
