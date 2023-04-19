@@ -164,6 +164,8 @@ footer {
   font-family: bold;
   margin-bottom: 17px;
   text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 .hero__title-desc {
@@ -253,6 +255,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-weight: 700;
 }
 
 .feature__text {
