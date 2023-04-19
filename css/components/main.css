@@ -399,6 +399,8 @@ footer {
 
 .benefit__title {
   color: #292929;
+  font-weight: 700;
+  font-size: 27px;
 }
 
 .reviews {
