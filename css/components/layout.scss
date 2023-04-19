@@ -73,11 +73,14 @@ img {
 
 
 .container {
-	position: relative;
 	margin: 0 auto;
-	width: containerWidth;
+	width: 95%;
 	height: 100%;
-}
+	max-width: 940px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  } 
 
 .logo,.socials,.socials__link,.menu, .menu__item,.contacts {
   display: flex;
