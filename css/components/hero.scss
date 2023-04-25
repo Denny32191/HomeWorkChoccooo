@@ -1,6 +1,7 @@
 .hero{
     display: flex;
     justify-content: space-between;
+
 }
 .hero-img{
     background: url("./../../img/imgheader/bg\ \(1\).png") center center / cover no-repeat;
@@ -16,8 +17,9 @@
     justify-content: space-between;
     height: 100%;
     padding: rem(28px) 0 rem(64px) ;
-
+    
 }
+
 .hero__main-title{
     font-size: rem(48px);
     line-height: 1.1;
@@ -25,6 +27,18 @@
     text-transform: uppercase;
     font-size: rem(48px);
     font-weight: 700;
+
+    @include tablets {
+        padding: 0 4%;
+        margin-bottom: rem(11px);
+      }
+  
+      @include phones {
+        padding: 0 5%;
+        font-size: calc(1rem + 4vw);
+        line-height: 0.9;
+        margin-bottom: rem(14px);
+      }
 
 }
 .hero__title-desc{
@@ -35,6 +49,12 @@
     @include tablets {
         padding: 4%;
     }
+
+    @include phones {
+        padding: 0 5%;
+        font-size: rem(18px);
+        margin-bottom: rem(40px);
+      }
 }
 .hero__title-section{
     width: 46%;

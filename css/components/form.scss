@@ -1,6 +1,6 @@
 .form {
     display: flex;
-    flex-direction: column;
+
 
     @include tablets {
       padding: 0 19%;
@@ -79,6 +79,7 @@
       @include tablets {
         margin-left: 0;
       }
+
     }
   
     .form__controls {
@@ -93,4 +94,11 @@
 .form__btns{
   display: flex;
   justify-content: center;
+}
+.form__input--textarea{
+  
+  @include phones {
+    height: 5rem;
+    width: 15rem;
+  }
 }

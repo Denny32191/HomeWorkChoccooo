@@ -180,6 +180,20 @@ footer {
   font-size: 2.6666666667rem;
   font-weight: 700;
 }
+@media screen and (max-width: 768px) {
+  .hero__main-title {
+    padding: 0 4%;
+    margin-bottom: 0.6111111111rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__main-title {
+    padding: 0 5%;
+    font-size: calc(1rem + 4vw);
+    line-height: 0.9;
+    margin-bottom: 0.7777777778rem;
+  }
+}
 
 .hero__title-desc {
   font-size: 1.1111111111rem;
@@ -189,6 +203,13 @@ footer {
 @media screen and (max-width: 768px) {
   .hero__title-desc {
     padding: 4%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__title-desc {
+    padding: 0 5%;
+    font-size: 1rem;
+    margin-bottom: 2.2222222222rem;
   }
 }
 
@@ -228,11 +249,6 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-@media screen and (max-width: 768px) {
-  .header {
-    padding: 0 3.5rem 1.1666666667rem 1.8888888889rem;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -425,16 +441,36 @@ footer {
 .headline__title {
   margin-bottom: 1.3333333333rem;
 }
+@media screen and (max-width: 480px) {
+  .headline__title {
+    margin-bottom: 10px;
+  }
+}
 
 .headline__subtitle {
   padding: 0 26%;
   margin-bottom: 2.6666666667rem;
+}
+@media screen and (max-width: 480px) {
+  .headline__subtitle {
+    padding: 0;
+    margin-bottom: 16px;
+    color: black;
+  }
 }
 
 .benefits {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 480px) {
+  .benefits {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .benefits__item {
@@ -444,6 +480,11 @@ footer {
   padding: 0 3%;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .benefits__item {
+    padding: 0;
+  }
+}
 .benefits__item:before {
   content: url("./../../img/hero/benefits/Combined shape 2204.png");
   position: absolute;
@@ -451,6 +492,11 @@ footer {
   right: 0;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
+}
+@media screen and (max-width: 768px) {
+  .benefits__item:before {
+    display: none;
+  }
 }
 .benefits__item:first-child {
   padding-left: 0;
@@ -464,6 +510,14 @@ footer {
 
 .benefit {
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .benefit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+  }
 }
 
 .benefit__image-wrapper {
@@ -491,6 +545,16 @@ footer {
   color: #292929;
   font-weight: 700;
   font-size: 1.4444444444rem;
+}
+
+.benefit__image {
+  margin-bottom: 1.0555555556rem;
+}
+@media screen and (max-width: 480px) {
+  .benefit__image {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
 }
 
 .reviews__display {
@@ -614,10 +678,6 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 @media screen and (max-width: 768px) {
   .form {
@@ -731,44 +791,11 @@ footer {
           justify-content: center;
 }
 
-.fixed-menu {
-  position: fixed;
-  top: 20%;
-  right: 3%;
-}
-
-.fixed-menu__item {
-  margin-bottom: 0.3333333333rem;
-}
-.fixed-menu__item--active .fixed-menu__link {
-  border-color: white;
-}
-@media screen and (max-width: 768px) {
-  .fixed-menu__item {
-    display: none;
+@media screen and (max-width: 480px) {
+  .form__input--textarea {
+    height: 5rem;
+    width: 15rem;
   }
-}
-
-.fixed-menu__link {
-  width: 0.8888888889rem;
-  height: 0.8888888889rem;
-  border-radius: 50%;
-  border: 0.0555555556rem solid transparent;
-  display: block;
-  position: relative;
-}
-.fixed-menu__link:before {
-  content: "";
-  display: block;
-  height: 0.3333333333rem;
-  width: 0.3333333333rem;
-  border-radius: 50%;
-  background-color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .radio {
@@ -832,10 +859,15 @@ footer {
 .fixed-menu__item--active .fixed-menu__link {
   border-color: white;
 }
+@media screen and (max-width: 768px) {
+  .fixed-menu__item {
+    display: none;
+  }
+}
 
 .fixed-menu__link {
-  width: 1rem;
-  height: 1rem;
+  width: 0.8888888889rem;
+  height: 0.8888888889rem;
   border-radius: 50%;
   border: 0.0555555556rem solid transparent;
   display: block;
@@ -844,10 +876,10 @@ footer {
 .fixed-menu__link:before {
   content: "";
   display: block;
-  width: 0.4444444444rem;
-  height: 0.4444444444rem;
+  height: 0.3333333333rem;
+  width: 0.3333333333rem;
   border-radius: 50%;
-  background: #fff;
+  background-color: white;
   position: absolute;
   top: 50%;
   left: 50%;
