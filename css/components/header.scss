@@ -2,6 +2,11 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    
+    @include tablets {
+        padding: 0 rem(63px) rem(21px) rem(34px);
+      }
+
 }
 
 .phone-number.header__phone-number {
