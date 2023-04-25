@@ -2,7 +2,7 @@
     display: flex;
 }
 .features__item {
-    margin-right: 33px;
+    margin-right: rem(32px);
 
     &:last-child{
         margin-right: 0;

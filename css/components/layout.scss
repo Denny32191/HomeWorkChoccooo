@@ -1,10 +1,20 @@
+html{
+	font-size: $baseFontSize;
+
+	@include tablets {
+		font-size: $baseFontSize -1px;
+	}
+
+	@include phones {
+		font-size: $baseFontSize -2px;
+	}
+}
 body,
 html {
 	height: 100%;
 }
 
 body {
-	font-size: $baseFontSize;
 	font-family: "Alegreya Sans";
 	line-height: 1.42;
 	-webkit-font-smoothing: antialiased;
@@ -16,7 +26,7 @@ body {
 	font-family: "Alegreya Sans";
 	font-weight: 700;
 	font-style: bold;
-	font-size: 18px;
+	font-size: rem(18px);
 }
 
 button {
@@ -95,7 +105,7 @@ img {
 
 
 .menu {
-    margin-left: 46px;
+    margin-left: rem(46px);
     display: flex;
     justify-content:flex-start;
     align-items:center;
@@ -104,8 +114,8 @@ img {
 .contacts__phone {
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
-    line-height: 35px;
+    font-size: rem(26px);
+    line-height: rem(36px);
 }
 
 footer {

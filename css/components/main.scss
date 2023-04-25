@@ -1,9 +1,16 @@
 $container-Width: 940px;
 $baseFontSize: 18px;
 
+@import "media";
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
 //colors
 $yellow: #FFD517;
 $liteYellow: #FEDB3F;
+
 
 //z-index
 $z-fixed-menu: 100;
@@ -31,3 +38,4 @@ $z-fixed-menu: 100;
 @import "fixed";
 @import "radio";
 @import "fixed-menu";
+@import "hamburger";

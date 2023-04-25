@@ -1,7 +1,5 @@
 .benefits {
     display: flex;
-    width: 940px;
-    height: 640px;
 }
 
 .benefits__item {
@@ -12,7 +10,7 @@
     &:before {
         content: url("./../../img/hero/benefits/Combined\ shape\ 2204.png");
         position: absolute;
-        top: 30px;
+        top: rem(30px);
         right: 0;
         transform: translateX(50%);
     }
