@@ -15,6 +15,10 @@
     }
   .form__title_comment{
     padding-left: rem(30px);
+
+    @include tablets {
+      padding-left: 0;
+    }
   }
     .section-form {
       color: #fff;
