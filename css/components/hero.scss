@@ -16,6 +16,10 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    
+    @include phones{
+        padding-bottom: 50px;
+    }
 }
 
 .hero__main-title{

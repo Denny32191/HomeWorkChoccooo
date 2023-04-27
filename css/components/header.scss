@@ -10,6 +10,10 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 26px;
+    
+    @include phones{
+        padding-top: 20px;
+    }
 
 }
 
@@ -24,7 +28,6 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    flex-wrap: wrap;
     margin-right: 20px;
 }
 .menu__item{
@@ -55,7 +58,6 @@
     
 }
 .menu{
-
     @include tablets {
         display: none;
         margin: 0 30px;
@@ -70,11 +72,4 @@
 }
 .menu__list{
     justify-content: center;
-}
-.logo-img{
-    margin-bottom: 10px;
-
-    @include tablets {
-     margin-right: 300px;
-    }
 }

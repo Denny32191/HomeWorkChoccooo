@@ -93,6 +93,7 @@ img {
 }
 
 .container {
+  width: 100%;
   margin: 0 auto;
   max-width: 940px;
   display: -webkit-box;
@@ -162,6 +163,11 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+}
+@media screen and (max-width: 480px) {
+  .hero__container {
+    padding-bottom: 50px;
+  }
 }
 
 .hero__main-title {
@@ -254,6 +260,11 @@ footer {
           align-items: center;
   padding-top: 26px;
 }
+@media screen and (max-width: 480px) {
+  .header__container {
+    padding-top: 20px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .phone-number.header__phone-number {
@@ -269,8 +280,6 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-right: 20px;
 }
 
@@ -325,15 +334,6 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.logo-img {
-  margin-bottom: 10px;
-}
-@media screen and (max-width: 768px) {
-  .logo-img {
-    margin-right: 300px;
-  }
 }
 
 .features {
@@ -925,6 +925,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   margin-right: 10px;
+  padding-bottom: 20px;
 }
 
 .hamburger {
