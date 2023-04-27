@@ -823,7 +823,7 @@ footer {
 @media screen and (max-width: 768px) {
   .form {
     margin: 0;
-    padding: 0 2%;
+    padding: 0 22%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -833,6 +833,7 @@ footer {
 @media screen and (max-width: 480px) {
   .form {
     margin: 0 auto;
+    padding: 0 1%;
   }
 }
 
@@ -970,11 +971,6 @@ footer {
           flex-direction: column;
 }
 
-@media screen and (max-width: 768px) {
-  .form__controls-first {
-    margin-left: 40px;
-  }
-}
 @media screen and (max-width: 480px) {
   .form__controls-first {
     display: -webkit-box;

@@ -3,11 +3,12 @@
 
     @include tablets {
       margin: 0;
-      padding: 0 2%;
+      padding: 0 22%;
       flex-direction: column;
     }
     @include phones {
       margin: 0 auto;
+      padding: 0 1%;
     }
   }
     .form__titile-white{
@@ -128,8 +129,8 @@
   flex-direction: column;
 }
 .form__controls-first{
+
   @include tablets{
-    margin-left: 40px;
   }
 
   @include phones{
