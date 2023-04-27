@@ -473,6 +473,7 @@ footer {
 @media screen and (max-width: 480px) {
   .section__title {
     margin-bottom: 26px;
+    font-size: 40px;
   }
 }
 
@@ -718,6 +719,11 @@ footer {
           flex: 1;
   margin-left: 2.2222222222rem;
 }
+@media screen and (max-width: 768px) {
+  .reviews__content {
+    margin: 0;
+  }
+}
 @media screen and (max-width: 480px) {
   .reviews__content {
     padding-top: 0;
@@ -733,6 +739,11 @@ footer {
 @media screen and (max-width: 768px) {
   .reviews__title {
     padding-bottom: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__title {
+    font-size: 27px;
   }
 }
 

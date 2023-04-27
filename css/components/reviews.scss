@@ -60,6 +60,10 @@
     flex: 1;
     margin-left: rem(40px);
 
+    @include tablets {
+        margin: 0;
+    }
+
     @include phones {
         padding-top: 0;
       }
@@ -72,6 +76,9 @@
 
     @include tablets {
         padding-bottom: 16px;
+    }
+    @include phones {
+        font-size: 27px;
     }
 }
 .reviews__text{
