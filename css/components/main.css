@@ -81,10 +81,6 @@ a {
   transition: 0.3s all;
 }
 
-img {
-  max-width: 100%;
-}
-
 .wrapper {
   position: relative;
   width: 100%;
@@ -93,7 +89,6 @@ img {
 }
 
 .container {
-  width: 100%;
   margin: 0 auto;
   max-width: 940px;
   display: -webkit-box;
@@ -259,6 +254,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 26px;
+  width: 95%;
 }
 @media screen and (max-width: 480px) {
   .header__container {
