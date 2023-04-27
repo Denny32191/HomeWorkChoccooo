@@ -1,20 +1,26 @@
 .form {
     display: flex;
 
-
     @include tablets {
-      padding: 0 19%;
+      margin: 0;
+      padding: 0 2%;
       flex-direction: column;
     }
+    @include phones {
+      margin: 0 auto;
+    }
   }
-    
+    .form__titile-white{
+      color: white;
+    }
   
     .form-title {
-      color: #fff;
+      color: white;
       margin-top: rem(60px);
     }
   .form__title_comment{
     padding-left: rem(30px);
+    color: white;
 
     @include tablets {
       padding-left: 0;
@@ -78,14 +84,34 @@
       }
       @include tablets {
         margin-left: 0;
+        padding: 6px 10px;
+        
+        
       }
 
     }
+  .form__input--textarea{
+
+    @include tablets{
+      height: 5rem;
+      width: 24rem;
+      margin-left: 0;
+      }
+      @include phones {
+        height: 5rem;
+        width: 24rem;
+        margin-left: 0;
+      }
+    }
   
     .form__controls {
-      display: flex;
+      // display: flex;
       flex-wrap: wrap;
       margin-left: rem(27px);
+
+      @include phones {
+        flex-wrap: nowrap;
+      }
 
     }
 
@@ -96,13 +122,17 @@
   display: flex;
   justify-content: center;
 }
-.form__input--textarea{
-  
-  @include phones {
-    height: 5rem;
-    width: 15rem;
-  }
-}
+
 .container-bg{
   flex-direction: column;
+}
+.form__controls-first{
+  @include tablets{
+    margin-left: 40px;
+  }
+
+  @include phones{
+  display: flex;
+  align-items: center;
+  }
 }

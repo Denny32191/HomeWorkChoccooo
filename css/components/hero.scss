@@ -10,6 +10,14 @@
     height: 100vh;
     min-height: rem(650px);
 
+    @include tablets {
+        background: url("./../../img/imgheader/bg70px.svg")center center / cover no-repeat;
+
+    }
+    @include phones {
+        background: url("./../../img/imgheader/bg480px.svg")center center / cover no-repeat;
+    }
+
 }
 .hero__container{
     display: flex;
@@ -32,14 +40,15 @@
 
     @include tablets {
         padding: 0 4%;
-        margin-bottom: rem(11px);
+        margin-bottom: 9px;
       }
   
       @include phones {
-        padding: 0 5%;
+        padding: 0 ;
         font-size: calc(1rem + 4vw);
         line-height: 0.9;
         margin-bottom: rem(14px);
+        font-size: 40px;
       }
 
 }
@@ -49,7 +58,7 @@
     padding-right: 10%;
 
     @include tablets {
-        padding: 4%;
+        padding-bottom: 44px;
     }
 
     @include phones {

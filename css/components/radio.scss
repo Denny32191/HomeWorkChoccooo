@@ -47,3 +47,18 @@
         transform: translate(-50%, -50%);
     }
 }
+.radio__title{
+    color: white;
+    @include phones{
+        white-space: nowrap;
+    }
+}
+.radio--checkbox{
+    @include phones {
+        margin-left: 50px;
+    }
+}
+.form__controls-first{
+    display: flex;
+    white-space: nowrap;
+}

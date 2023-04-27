@@ -10,8 +10,12 @@
 .headline__title{
     margin-bottom: rem(24px);
 
+    @include tablets{
+        margin-bottom: 16px;
+    }
+
     @include phones {
-        margin-bottom: 10px;
+        margin-bottom: 9px;
     }
 }
 .headline__subtitle{
@@ -20,9 +24,13 @@
     color: black;
     text-align: center;
 
+    @include tablets {
+        padding-bottom: 49px;
+    }
+
     @include phones {
         padding: 0;
-        margin-bottom: 16px;
+        margin-bottom: 53px;
         color: black;
     }
 }
