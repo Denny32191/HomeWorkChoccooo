@@ -4,6 +4,7 @@
     user-select: none;
     padding-bottom: rem(20px);
     padding-right: rem(10px);
+    margin-left: 28px;
 
     &--checkbox{
         .radio__visible{
@@ -54,6 +55,8 @@
     }
 }
 .radio--checkbox{
+    margin-left: 2px;
+
     @include phones {
         margin-left: 50px;
     }

@@ -935,6 +935,7 @@ footer {
   .form__controls {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    margin-left: 90px;
   }
 }
 
@@ -985,6 +986,7 @@ footer {
           user-select: none;
   padding-bottom: 1.1111111111rem;
   padding-right: 0.5555555556rem;
+  margin-left: 28px;
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
@@ -1031,6 +1033,9 @@ footer {
   }
 }
 
+.radio--checkbox {
+  margin-left: 2px;
+}
 @media screen and (max-width: 480px) {
   .radio--checkbox {
     margin-left: 50px;
