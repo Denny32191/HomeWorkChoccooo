@@ -249,6 +249,7 @@ footer {
 .serfsmal, .housesmall, .carsmall {
   width: 35px;
   height: 35px;
+  margin-right: 14px;
 }
 
 .header {
@@ -360,6 +361,7 @@ footer {
 .phonewhite {
   width: 12px;
   height: 12px;
+  margin-right: 6px;
 }
 
 .features {
