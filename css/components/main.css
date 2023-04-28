@@ -251,6 +251,16 @@ footer {
   height: 35px;
   margin-right: 14px;
 }
+@media screen and (max-width: 768px) {
+  .serfsmal, .housesmall, .carsmall {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .serfsmal, .housesmall, .carsmall {
+    display: none;
+  }
+}
 
 .header {
   display: -webkit-box;
@@ -597,6 +607,16 @@ footer {
 .strong, .serfuniq, .maninblack {
   width: 64px;
   height: 64px;
+}
+@media screen and (max-width: 768px) {
+  .strong, .serfuniq, .maninblack {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .strong, .serfuniq, .maninblack {
+    display: none;
+  }
 }
 
 .benefit {

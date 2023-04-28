@@ -44,4 +44,11 @@
 .strong, .serfuniq, .maninblack{
     width: 64px;
     height: 64px;
+    @include tablets{
+
+        display: none;
+    }
+    @include phones{
+        display: none;
+    }
 }

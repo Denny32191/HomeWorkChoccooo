@@ -84,4 +84,11 @@
     width: 35px;
     height: 35px;
     margin-right: 14px;
+
+    @include tablets {
+        display: none;
+    }
+    @include phones {
+        display: none;
+    }
 }
