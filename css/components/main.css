@@ -1141,7 +1141,6 @@ footer {
   width: 100%;
   min-height: 5rem;
   padding-top: 0.9444444444rem;
-  background: #fff;
   position: absolute;
 }
 .footer__container {
@@ -1201,6 +1200,11 @@ footer {
   color: #B3B3B3;
   display: block;
   position: relative;
+}
+.vk .vk, .vk .fb, .vk .ig, .vk .tw:hover, .fb .vk, .fb .fb, .fb .ig, .fb .tw:hover, .ig .vk, .ig .fb, .ig .ig, .ig .tw:hover, .tw .vk, .tw .fb, .tw .ig, .tw .tw:hover {
+  color: #292929;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .section {

@@ -23,8 +23,8 @@
     display: block;
     position: relative;
   
-    //   @include hover {
-    //     color:#292929;
-    //     transition: 0.3s;
-    //   }
+    .vk, .fb, .ig, .tw:hover {
+        color:#292929;
+        transition: 0.3s;
+      }
   }
