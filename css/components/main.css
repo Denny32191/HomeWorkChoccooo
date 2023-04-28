@@ -599,7 +599,7 @@ footer {
 .benefits__item:before {
   content: url("./../../img/hero/benefits/Combined shape 2204.png");
   position: absolute;
-  top: 1.6666666667rem;
+  top: 3rem;
   right: 0;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
