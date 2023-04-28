@@ -386,6 +386,16 @@ footer {
 .features__item:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 768px) {
+  .features__item {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .features__item {
+    display: none;
+  }
+}
 
 .feature {
   display: -webkit-box;
@@ -398,6 +408,11 @@ footer {
   margin-right: 0.4444444444rem;
 }
 @media screen and (max-width: 768px) {
+  .feature__icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
   .feature__icon {
     display: none;
   }
@@ -607,16 +622,6 @@ footer {
 .strong, .serfuniq, .maninblack {
   width: 64px;
   height: 64px;
-}
-@media screen and (max-width: 768px) {
-  .strong, .serfuniq, .maninblack {
-    display: none;
-  }
-}
-@media screen and (max-width: 480px) {
-  .strong, .serfuniq, .maninblack {
-    display: none;
-  }
 }
 
 .benefit {

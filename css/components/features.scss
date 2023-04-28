@@ -7,4 +7,10 @@
     &:last-child{
         margin-right: 0;
     }
+    @include tablets{
+        display: none;
+    }
+    @include phones {
+        display: none;
+    }
     }
