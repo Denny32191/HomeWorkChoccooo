@@ -346,6 +346,12 @@ footer {
           justify-content: center;
 }
 
+.logo-header {
+  width: 56px;
+  height: 40px;
+  color: white;
+}
+
 .features {
   display: -webkit-box;
   display: -ms-flexbox;
