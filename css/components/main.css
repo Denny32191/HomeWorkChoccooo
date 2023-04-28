@@ -467,7 +467,7 @@ footer {
   margin-bottom: 3.6666666667rem;
   text-align: center;
   text-transform: uppercase;
-  color: black;
+  color: white;
 }
 @media screen and (max-width: 768px) {
   .section__title {
@@ -1228,7 +1228,7 @@ footer {
   margin-bottom: 3.6666666667rem;
   text-align: center;
   text-transform: uppercase;
-  color: black;
+  color: white;
 }
 @media screen and (max-width: 768px) {
   .section__title {
