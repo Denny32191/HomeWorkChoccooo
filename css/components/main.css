@@ -125,7 +125,11 @@ a {
 
 footer {
   position: relative;
-  width: 100%;
+  width: 95%;
+  max-width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .hero {
@@ -1130,4 +1134,106 @@ footer {
   background: white;
   height: 4px;
   border-radius: 10px;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 5rem;
+  padding-top: 0.9444444444rem;
+  background: #fff;
+  position: absolute;
+}
+.footer__container {
+  margin: 0 auto;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .footer__container {
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.social__item {
+  margin-right: 0.7777777778rem;
+}
+.social__item:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 480px) {
+  .social {
+    padding-bottom: 1.1111111111rem;
+  }
+}
+
+.vk, .fb, .ig, .tw {
+  width: 1.1111111111rem;
+  height: 1.1111111111rem;
+  color: #B3B3B3;
+  display: block;
+  position: relative;
+}
+
+.section {
+  height: 100vh;
+  min-height: 36.1111111111rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section__title {
+  font-size: 2.6666666667rem;
+  font-weight: bold;
+  margin-bottom: 3.6666666667rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  .section__title {
+    margin-bottom: 33px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section__title {
+    margin-bottom: 26px;
+    font-size: 40px;
+  }
 }

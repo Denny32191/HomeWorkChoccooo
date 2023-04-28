@@ -74,6 +74,7 @@ a {
 	transition: 0.3s all;
 }
 
+
 img {
 	// max-width: 100%;
 }
@@ -114,5 +115,7 @@ img {
 
 footer {
 	position: relative;
-	width: 100%;
+	width: 95%;
+	max-width: 95%;
+	display: flex;
 }
