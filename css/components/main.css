@@ -246,6 +246,11 @@ footer {
   }
 }
 
+.serfsmal, .housesmall, .carsmall {
+  width: 35px;
+  height: 35px;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,6 +355,11 @@ footer {
   width: 56px;
   height: 40px;
   color: white;
+}
+
+.phone-number__icon {
+  width: 12px;
+  height: 12px;
 }
 
 .features {
@@ -582,6 +592,11 @@ footer {
   display: none;
 }
 
+.serfstrong, .serfuniq, .maninblack {
+  width: 64px;
+  height: 64px;
+}
+
 .benefit {
   text-align: center;
 }
@@ -611,7 +626,7 @@ footer {
   }
 }
 
-.benefit__icon {
+.serfstrong, .serfuniq, .maninblack {
   width: 3.5555555556rem;
   height: 3.5555555556rem;
   position: absolute;
