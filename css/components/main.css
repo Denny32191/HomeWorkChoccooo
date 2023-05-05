@@ -1040,6 +1040,10 @@ footer {
   overflow: hidden;
 }
 
+.form__input_error {
+  border-color: red;
+}
+
 .radio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1460,7 +1464,7 @@ footer {
 }
 
 .products__arrow {
-  background: url("./../../img/sprite-img/left arrow.png") center center no-repeat;
+  background: url("./../../img/sprite-img/right arrow.png") center center no-repeat;
   position: relative;
   background-size: contain;
   display: block;
