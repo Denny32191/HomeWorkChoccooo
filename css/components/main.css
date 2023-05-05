@@ -1430,12 +1430,17 @@ footer {
 }
 
 .products__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 949px;
 }
 
 .products__slider {
   position: relative;
-  overflow: hidden;
+  left: 400px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .products__slider .bx-wrapper {
   border: 0;
@@ -1444,8 +1449,16 @@ footer {
           box-shadow: none;
 }
 
+.products__list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .products__arrow {
-  background: url("") center center no-repeat;
+  background: url("./../../img/sprite-img/left arrow.png") center center no-repeat;
+  position: relative;
   background-size: contain;
   display: block;
   position: absolute;
@@ -1496,6 +1509,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1517,6 +1531,7 @@ footer {
 
 .products__image {
   padding-top: 1.9444444444rem;
+  position: relative;
 }
 @media screen and (max-width: 480px) {
   .products__image {

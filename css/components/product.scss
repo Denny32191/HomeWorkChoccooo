@@ -3,12 +3,15 @@
   }
   
   .products__container {
+    display: flex;
     max-width: 949px;
   }
   
   .products__slider {
     position: relative;
-    overflow: hidden;
+    left: 400px;
+    transition: .5s;
+  
   
     .bx-wrapper {
       border: 0;
@@ -17,10 +20,18 @@
     }
   }
   
+  .products__list{
+    position: relative;
+    display: flex;
+
+
+
+  }
+
   .products__arrow {
-    background: url("") center center no-repeat;
+    background: url("./../../img/sprite-img/left\ arrow.png") center center no-repeat;
     // background: url('./img/icons/button-right.svg') center center no-repeat;
-  
+    position: relative;
     background-size: contain;
     display: block;
     position: absolute;
@@ -63,6 +74,8 @@
   .products__item {
     display: flex;
     justify-content: space-between;
+    position: relative;
+
     align-items: center;
   
     @include tablets {
@@ -74,6 +87,7 @@
   
   .products__image {
     padding-top: rem(35px);
+    position: relative;
   
     @include phones {
       margin-bottom: 0;
@@ -138,7 +152,7 @@
   .products__features {
     display: flex;
     margin-bottom: rem(25px);
-  
+
     @include tablets {
       margin-bottom: rem(21px);
     }
