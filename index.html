@@ -393,40 +393,42 @@
       <section class="section form-img">
         <div class="container container-bg">
           <h2 class="section__title order__title">ЗАКАЖИТЕ ДОСТАВКУ</h2>
-          <form class="form">
+          <form class="form" id="form">
+            <input type="hidden" name="to" value="somewhere@mail.com">
             <div class="form__col">
               <div class="form__row">
                 <label for="" class="form__block">
                   <div class="form__titile-white">Имя</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" type="text" name="name">
                 </label>
                 <label for="" class="form__block">
                   <div id="phones" class="form__titile-white">Телефон</div>
-                  <input type="text-phone" class="form__input">
+                  <input type="text-phone" class="form__input" name="phone">
+                </label>
                 </label>
               </div>
               <div class="form__row">
                 <label for="" class="form__block">
                   <div class="form__titile-white">Улица</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="street">
                 </label>
               </div>
               <div class="form__row">
                 <label for="" class="form__block">
                   <div class="form__titile-white">Дом</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="house">
                 </label>
                 <label for="" class="form__block">
                   <div class="form__titile-white">Корпус</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="block">>
                 </label>
                 <label for="" class="form__block">
                   <div class="form__titile-white">Квратира</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="apartment">
                 </label>
                 <label for="" class="form__block">
                   <div class="form__titile-white">Этаж</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="floor">
                 </label>
               </div>
             </div>
@@ -434,24 +436,24 @@
               <div class="form__row form__row--textarea">
                 <label for="" class="form__block">
                   <div class="form__title form__title_comment">Comment</div>
-                  <textarea class="form__input form__input--textarea"></textarea>
+                  <textarea class="form__input form__input--textarea" name="comment"></textarea>
                 </label>
               </div>
               <div class="form__controls-first">
                 <label class="radio">
-                  <input type="radio" name="option" class="radio__elem">
+                  <input type="radio" name="option" class="radio__elem" name="pay-option">
                   <div class="radio__visible"></div>
                   <div class="radio__title">Оплата наличными</div>
                 </label>
                 <label class="radio radio">
-                  <input type="radio" name="option" class="radio__elem">
+                  <input type="radio" name="option" class="radio__elem" name="pay-option">
                   <div class="radio__visible"></div>
                   <div class="radio__title">Оплата картой</div>
                 </label>
               </div>
               <div class="form__controls">
                 <label class="radio radio--checkbox">
-                  <input type="checkbox" class="radio__elem">
+                  <input type="checkbox" class="radio__elem" name="dont-disturb">
                   <div class="radio__visible"></div>
                   <div class="radio__title">Не перезванивать</div>
                 </label>
@@ -524,7 +526,9 @@
       </ul>
     </div>
   </footer>
-  <script src="./script/slider.js"></script>
+  <script src="./script/slider.js" ></script>
+
+  <script scr="./script/validation.js"></script>
 </body>
 
 </html>
