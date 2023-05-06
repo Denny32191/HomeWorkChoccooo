@@ -1327,6 +1327,10 @@ footer {
   opacity: 1;
 }
 
+.dropdown__features:hover {
+  background: #3465A3;
+}
+
 .dropdown__features-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1462,6 +1466,11 @@ footer {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
+@media screen and (max-width: 768px) {
+  .products__list {
+    position: relative;
+  }
+}
 
 .products__arrow {
   background: url("./../../img/sprite-img/right arrow.png") center center no-repeat;
@@ -1481,14 +1490,14 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .products__arrow--next {
-    right: 21%;
+    right: 29%;
     top: 33%;
   }
 }
 @media screen and (max-width: 480px) {
   .products__arrow--next {
-    right: 1%;
-    top: 26%;
+    right: 33%;
+    top: 30%;
   }
 }
 .products__arrow--prev {
@@ -1504,8 +1513,8 @@ footer {
 }
 @media screen and (max-width: 480px) {
   .products__arrow--prev {
-    left: 1%;
-    top: 24%;
+    left: 15%;
+    top: 28%;
   }
 }
 
@@ -1535,6 +1544,23 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .products__item {
+    width: 84%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

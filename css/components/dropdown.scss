@@ -20,6 +20,11 @@
       opacity: 1;
     }
   }
+  .dropdown__features{
+    &:hover{
+      background: #3465A3;
+    }
+  } 
   
   .dropdown__features-content {
     display: flex;
@@ -27,6 +32,7 @@
     align-items: center;
     justify-content: center;
     color: #fff;
+
   }
   
   .dropdown__icon-main {
