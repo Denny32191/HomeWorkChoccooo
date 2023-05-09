@@ -690,10 +690,27 @@ footer {
   }
 }
 
+.container-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 95%;
+}
+
 .reviews__display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 940px;
+  height: 340px;
   background: #F8FAF9;
   padding: 2.7777777778rem 2.3888888889rem 1.8888888889rem;
   margin-bottom: 0.7777777778rem;
+  display: flex;
 }
 @media screen and (max-width: 768px) {
   .reviews__display {
@@ -706,22 +723,47 @@ footer {
   }
 }
 
-.reviews__display-inner {
+.reviews__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 @media screen and (max-width: 768px) {
-  .reviews__display-inner {
+  .reviews__list {
+    position: absolute;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
+}
+
+.reviews__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 95%;
+}
+@media screen and (max-width: 768px) {
+  .reviews__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.reviews__item .reviews__item--active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
 }
 
 .reviews__avatar {
@@ -730,9 +772,19 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .reviews__avatar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 7.2222222222rem;
     height: 7.3333333333rem;
-    margin-bottom: 32px;
+    padding-bottom: 32px;
+    margin: auto;
   }
 }
 @media screen and (max-width: 480px) {
@@ -764,6 +816,7 @@ footer {
 }
 
 .reviews__content {
+  max-width: 700px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -830,12 +883,6 @@ footer {
   .container-first {
     margin-bottom: 80px;
   }
-}
-
-.interactive-avatar-active {
-  position: static;
-  opacity: 1;
-  pointer-events: unset;
 }
 
 .interactive-avatar {
