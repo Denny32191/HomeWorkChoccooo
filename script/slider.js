@@ -10,20 +10,20 @@ const sliderTranform = (to) => {
     let i = 0;
 
     if (to === 'next') {
-        if (currentPosition === 0 ) {
+        if (currentPosition === 0) {
             i = 1
         } else if (currentPosition > 0 && currentPosition < width * (items.length - 1)) {
             i = currentPosition / width + 1
         }
     } else {
-        if (currentPosition === 0 ) {
+        if (currentPosition === 0) {
             i = (items.length - 1)
         } else if (currentPosition > 0) {
             i = currentPosition / width - 1
         }
     }
 
-    
+
     slider.style.left = `-${width * i}px`
 }
 
@@ -37,9 +37,9 @@ for (let index = 0; index < buttons.length; index++) {
         } else {
             sliderTranform('next')
         }
-        
+
     })
-    
+
 }
 
 
@@ -63,7 +63,7 @@ const validateForm = (data) => {
         const element = data[key];
 
         const validField = validateField(element)
-        
+
         if (!validField) {
             valid = false
         }
@@ -74,7 +74,7 @@ const validateForm = (data) => {
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
-    
+
     const data = {
         name: form.elements.name,
         phone: form.elements.phone,
@@ -86,5 +86,6 @@ form.addEventListener('submit', (e) => {
     } else {
         console.log('запрос не отправляем, ждём заполнения формы')
     }
-    
+
 })
+    ///бургер
