@@ -371,7 +371,7 @@
               </div>
             </div>
             <ul class="reviews__switcher">
-              <li class="reviews__switcher-item interactive-avatar interactive-avatar-active">
+              <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
                 <a href="#" class="interactive-avatar__link">
                   <img src="./img/interactive/girl.png" alt="" class="interactive-avatar__img">
                 </a>
@@ -481,6 +481,24 @@
       <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a></li>
     </ul>
   </nav>
+  <div class="burger-menu">
+    <a href="#" class="burger-menu__close">
+      <svg class="burger-menu__close-img">
+        <use xlink:href=sprite.svg#close-icon></use>
+      </svg>
+    </a>
+    <nav class="burger-menu__nav">
+      <ul class="burger-menu__list">
+        <li class="burger-menu__item"><a href="#" data-scroll-to="benefits" class="burger-menu__link">О нас</a></li>
+        <li class="burger-menu__item"><a href="#" data-scroll-to="products" class="burger-menu__link">Серфборды</a></li>
+        <li class="burger-menu__item"><a href="#" data-scroll-to="team" class="burger-menu__link">Команда</a></li>
+        <li class="burger-menu__item"><a href="#" data-scroll-to="menu" class="burger-menu__link">Меню</a></li>
+        <li class="burger-menu__item"><a href="#" data-scroll-to="reviews" class="burger-menu__link">Отзывы</a></li>
+        <li class="burger-menu__item"><a href="#" data-scroll-to="order" class="burger-menu__link">Как мы работаем</a></li>
+        <li class="burger-menu__item"><a href="#" data-scroll-to="map" class="burger-menu__link">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
   <footer class="footer">
     <div class="footer__container ">
       <adress class="contacts">
@@ -527,6 +545,7 @@
     </div>
   </footer>
   <script src="./script/slider.js" ></script>
+  <script src="./script/burger-menu.js" ></script>
 
   <script scr="jquery"></script>
 </body>
