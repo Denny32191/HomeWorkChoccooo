@@ -707,7 +707,6 @@ footer {
   display: flex;
   width: 940px;
   height: 340px;
-  background: #F8FAF9;
   padding: 2.7777777778rem 2.3888888889rem 1.8888888889rem;
   margin-bottom: 0.7777777778rem;
   display: flex;
@@ -740,11 +739,12 @@ footer {
 }
 
 .reviews__item {
+  background: #F8FAF9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  width: 95%;
+  width: 940px;
 }
 @media screen and (max-width: 768px) {
   .reviews__item {
@@ -759,11 +759,6 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
-.reviews__item .reviews__item--active {
-  position: static;
-  opacity: 1;
-  pointer-events: unset;
 }
 
 .reviews__avatar {
@@ -816,7 +811,6 @@ footer {
 }
 
 .reviews__content {
-  max-width: 700px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;

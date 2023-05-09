@@ -9,7 +9,6 @@
     display: flex;
     width: 940px;
     height: 340px;
-    background: #F8FAF9;
     padding: rem(50px) rem(43px) rem(34px);
     margin-bottom: rem(14px);
     display: flex;
@@ -36,18 +35,10 @@
 }
 
 .reviews__item {
+    background: #F8FAF9;
     display: flex;
     position: absolute;
-    width: 95%;
-    // pointer-events: none;
-    // display: flex;
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // right: 0;
-    // bottom: 0;
-    // transition: .3s;
-    // opacity: 0;
+    width: 940px;
 
     @include tablets {
         display: flex;
@@ -55,11 +46,6 @@
         flex-direction: column;
     }
 
-    .reviews__item--active {
-        position: static;
-        opacity: 1;
-        pointer-events: unset;
-    }
 }
 
 .reviews__avatar {
@@ -103,7 +89,6 @@
 
 
 .reviews__content {
-    max-width: 700px;
     flex: 1;
     margin-left: rem(40px);
 
