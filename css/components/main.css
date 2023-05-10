@@ -700,6 +700,16 @@ footer {
           flex-direction: column;
   width: 95%;
 }
+@media screen and (max-width: 768px) {
+  .container-first {
+    margin-bottom: 180px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container-first {
+    margin-bottom: 80px;
+  }
+}
 
 .reviews__display {
   display: -webkit-box;
@@ -709,11 +719,11 @@ footer {
   height: 340px;
   padding: 2.7777777778rem 2.3888888889rem 1.8888888889rem;
   margin-bottom: 0.7777777778rem;
-  display: flex;
 }
 @media screen and (max-width: 768px) {
   .reviews__display {
-    margin-bottom: 32px;
+    padding: 0;
+    margin-bottom: 60px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -729,7 +739,6 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .reviews__list {
-    position: absolute;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -748,6 +757,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .reviews__item {
+    width: 95%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -758,6 +768,21 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+.reviews__item--active {
+  position: relative;
+  z-index: 100;
+}
+@media screen and (max-width: 768px) {
+  .reviews__item--active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -868,15 +893,12 @@ footer {
           justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
-  .container-first {
-    margin-bottom: 180px;
-  }
+.review__item--active {
+  z-index: 100;
 }
-@media screen and (max-width: 480px) {
-  .container-first {
-    margin-bottom: 80px;
-  }
+
+.review__item {
+  z-index: -100;
 }
 
 .interactive-avatar {
@@ -1848,4 +1870,29 @@ footer {
 }
 .burger-menu__item:last-child {
   margin-right: 0;
+}
+
+.team-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team_member {
+  width: 220px;
+  height: 290px;
 }

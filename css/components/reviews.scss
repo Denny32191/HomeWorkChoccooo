@@ -20,6 +20,7 @@
     margin-bottom: rem(14px);
 
     @include tablets {
+        padding: 0 ;
         margin-bottom: 60px;
     }
 
