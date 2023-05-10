@@ -798,9 +798,6 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 7.2222222222rem;
     height: 7.3333333333rem;
     padding-bottom: 32px;
