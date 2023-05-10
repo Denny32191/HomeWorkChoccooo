@@ -3,6 +3,13 @@
     flex-direction: column;
     width: 95%;
 
+    @include tablets {
+        margin-bottom: 180px;
+    }
+
+    @include phones {
+        margin-bottom: 80px;
+    }
 }
 
 .reviews__display {
@@ -11,10 +18,9 @@
     height: 340px;
     padding: rem(50px) rem(43px) rem(34px);
     margin-bottom: rem(14px);
-    display: flex;
 
     @include tablets {
-        margin-bottom: 32px;
+        margin-bottom: 60px;
     }
 
     @include phones {
@@ -26,7 +32,7 @@
 .reviews__list {
     display: flex;
     @include tablets {
-        position: absolute;
+
         flex-direction: column;
         text-align: center;
 
@@ -41,13 +47,24 @@
     width: 940px;
 
     @include tablets {
+        width: 95%;
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
 
 }
+.reviews__item--active{
+    position: relative;
+    z-index: 100;
 
+    @include tablets {
+        display: flex;
+        align-items: center;;
+
+    }
+
+}
 .reviews__avatar {
     width: rem(253px);
     height: rem(264px);
@@ -137,13 +154,9 @@
 
 }
 
-.container-first {
-
-    @include tablets {
-        margin-bottom: 180px;
-    }
-
-    @include phones {
-        margin-bottom: 80px;
-    }
+.review__item--active {
+    z-index: 100;
+}
+.review__item{
+    z-index: -100;
 }
