@@ -44,48 +44,48 @@ for (let index = 0; index < buttons.length; index++) {
 
 
 //Валидация
-const form = document.querySelector('.form');
+// const form = document.querySelector('.form');
 
-const validateField = (field) => {
-    if (field.value.trim().length) {
-        field.classList.remove('form__input_error')
-        return true
-    } else {
-        field.classList.add('form__input_error')
-        return false
-    }
-}
+// const validateField = (field) => {
+//     if (field.value.trim().length) {
+//         field.classList.remove('form__input_error')
+//         return true
+//     } else {
+//         field.classList.add('form__input_error')
+//         return false
+//     }
+// }
 
-const validateForm = (data) => {
-    let valid = true
+// const validateForm = (data) => {
+//     let valid = true
 
-    for (const key in data) {
-        const element = data[key];
+//     for (const key in data) {
+//         const element = data[key];
 
-        const validField = validateField(element)
+//         const validField = validateField(element)
 
-        if (!validField) {
-            valid = false
-        }
-    }
+//         if (!validField) {
+//             valid = false
+//         }
+//     }
 
-    return valid
-}
+//     return valid
+// }
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault()
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault()
 
-    const data = {
-        name: form.elements.name,
-        phone: form.elements.phone,
-        comment: form.elements.comment,
-    }
+//     const data = {
+//         name: form.elements.name,
+//         phone: form.elements.phone,
+//         comment: form.elements.comment,
+//     }
 
-    if (validateForm(data)) {
-        console.log('форма валидна, отправляем запрос')
-    } else {
-        console.log('запрос не отправляем, ждём заполнения формы')
-    }
+//     if (validateForm(data)) {
+//         console.log('форма валидна, отправляем запрос')
+//     } else {
+//         console.log('запрос не отправляем, ждём заполнения формы')
+//     }
 
-})
-    ///бургер
+// })
+
