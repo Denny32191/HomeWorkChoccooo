@@ -53,11 +53,21 @@
     display: flex;
     overflow: hidden;
     height: 0;
+    position: absolute;
     flex-direction: column;
     align-items: center;
+    width: 200px;
     margin-left: 40px;
+    transition: height .3s;
 }
 
 .team__avatar{
     margin-left: 20px;
+}
+.team__position{
+    color: black;
+    margin-bottom: 8px;
+
+    font-weight: bold;
+    size: 18px;
 }
