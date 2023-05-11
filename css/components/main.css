@@ -880,7 +880,6 @@ footer {
   font-weight: bold;
   color: black;
 }
-
 .reviews__switcher {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -888,6 +887,12 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .reviews__switcher {
+    z-index: -100;
+    margin-top: 80px;
+  }
 }
 
 .review__item--active {
