@@ -1880,6 +1880,12 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (max-width: 768px) {
+  .team__container {
+    width: 95%;
+    height: 50%;
+  }
+}
 
 .team {
   display: -webkit-box;
@@ -1898,9 +1904,6 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     padding: 10rem 0;
   }
 }
@@ -1980,9 +1983,24 @@ footer {
   -webkit-transition: height 0.3s;
   transition: height 0.3s;
 }
+@media screen and (max-width: 768px) {
+  .team__content {
+    position: relative;
+  }
+}
 
 .team__avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: 20px;
+}
+@media screen and (max-width: 768px) {
+  .team__avatar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .team__position {
@@ -1990,6 +2008,66 @@ footer {
   margin-bottom: 8px;
   font-weight: bold;
   size: 18px;
+}
+
+.team__icon-img--active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.team__list--mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .team__list--mobile {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.team__list--desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .team__list--desktop {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+.team__content-block {
+  height: 16.6666666667rem;
+  line-height: 1rem;
+  padding-left: 0.0555555556rem;
+  padding-right: 0.0555555556rem;
+}
+@media screen and (max-width: 768px) {
+  .team__content-block {
+    height: 22.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__content-block {
+    height: 16.1111111111rem;
+  }
 }
 
 .modal {
