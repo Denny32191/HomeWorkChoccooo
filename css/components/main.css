@@ -2019,9 +2019,12 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
+  height: 0;
 }
 @media screen and (max-width: 768px) {
   .team__list--mobile {
+    overflow: visible;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2053,12 +2056,6 @@ footer {
   }
 }
 
-.team__content-block {
-  height: 16.6666666667rem;
-  line-height: 1rem;
-  padding-left: 0.0555555556rem;
-  padding-right: 0.0555555556rem;
-}
 @media screen and (max-width: 768px) {
   .team__content-block {
     height: 22.5rem;

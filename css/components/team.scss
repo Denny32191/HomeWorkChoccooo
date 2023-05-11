@@ -10,7 +10,6 @@
 }
 .team {
     display: flex;
-
     @include tablets {
 
       display: flex;
@@ -67,8 +66,8 @@
     margin-left: 40px;
     transition: height .3s;
     @include tablets{
+
       position: relative;
-      
     }
 }
 
@@ -91,7 +90,10 @@
 }
 .team__list--mobile{
   display: flex;
+  overflow: hidden;
+  height: 0;
   @include tablets {
+    overflow: visible;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -109,10 +111,6 @@
   }
 }
 .team__content-block {
-  height: rem(300px);
-  line-height: rem(18px);
-  padding-left: rem(1px);
-  padding-right: rem(1px);
 
   @include tablets {
     height: rem(405px);
@@ -122,3 +120,4 @@
     height: rem(290px);
   }
 }
+
