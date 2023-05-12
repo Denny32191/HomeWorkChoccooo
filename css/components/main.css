@@ -1955,7 +1955,7 @@ footer {
 }
 
 .team__name {
-  margin-right: 10px;
+  margin-right: 4px;
   font-weight: 700;
   background: white;
 }
@@ -2026,6 +2026,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 2;
+  margin-left: 20px;
 }
 @media screen and (max-width: 768px) {
   .team__list {
@@ -2106,6 +2107,36 @@ footer {
             align-items: center;
     margin-left: 20px;
   }
+}
+
+.team__position--boris {
+  margin-left: 10px;
+}
+
+.team__text--boris {
+  max-width: 95%;
+}
+
+.team__position--oly {
+  margin-left: 36px;
+}
+
+.team__text--oly {
+  width: 220px;
+  margin-left: -4px;
+}
+@media screen and (max-width: 768px) {
+  .team__text--oly {
+    margin-left: -1px;
+  }
+}
+
+.team__position--ingvar {
+  margin-left: 34px;
+}
+
+.team__position--cate {
+  margin-left: 28px;
 }
 
 .modal {

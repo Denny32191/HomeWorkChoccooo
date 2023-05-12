@@ -53,7 +53,7 @@
 }
 
 .team__name {
-  margin-right: 10px;
+  margin-right: 4px;
   font-weight: 700;
   background: white;
   @include tablets {
@@ -106,6 +106,8 @@
   display: flex;
   justify-content: space-between;
   z-index: 2;
+
+  margin-left: 20px;
 
   @include tablets {
     flex-direction: column;
@@ -160,4 +162,26 @@
     margin-left: 20px;
   }
 
+}
+.team__position--boris{
+  margin-left: 10px;
+}
+.team__text--boris{
+  max-width: 95%;
+}
+.team__position--oly{
+  margin-left: 36px;
+}
+.team__text--oly{
+  width: 220px;
+  margin-left: -4px;
+  @include tablets{
+    margin-left: -1px;
+  }
+}
+.team__position--ingvar{
+  margin-left: 34px;
+}
+.team__position--cate{
+  margin-left: 28px;
 }
