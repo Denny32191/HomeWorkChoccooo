@@ -10,7 +10,7 @@
       container.addClass("active");
       svgIcon.addClass("team__icon-img--active");
       colorText.addClass("team__name--color");
-      contentBlock.height(360);
+      contentBlock.height(390);
     }
     
     const closeEveryItem = container => {
