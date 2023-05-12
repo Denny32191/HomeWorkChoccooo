@@ -1875,8 +1875,6 @@ footer {
 }
 
 .team__container {
-  width: 1100px;
-  height: 652px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1885,13 +1883,6 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media screen and (max-width: 768px) {
-  .team__container {
-    width: 95%;
-    height: 50%;
-  }
-}
-
 .team {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1938,7 +1929,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 40px;
+  margin-left: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1968,6 +1959,11 @@ footer {
   font-weight: 700;
   background: white;
 }
+@media screen and (max-width: 768px) {
+  .team__name {
+    margin: 0;
+  }
+}
 
 .team__content {
   display: -webkit-box;
@@ -1983,6 +1979,9 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 200px;
   margin-left: 40px;
   -webkit-transition: height 0.3s;
@@ -1990,7 +1989,12 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .team__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: relative;
+    margin-bottom: 20px;
   }
 }
 
@@ -2014,61 +2018,98 @@ footer {
   font-weight: bold;
   size: 18px;
 }
-
 .team__icon-img--active {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.team__list--mobile {
+.team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
-  height: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 2;
 }
 @media screen and (max-width: 768px) {
-  .team__list--mobile {
-    overflow: visible;
+  .team__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .team__list--desktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__list--desktop {
+    display: none;
+  }
+}
+.team__list--mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .team__list--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__list--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team__content-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
 }
-
-.team__list--desktop {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (max-width: 480px) {
+  .team__content-block {
+    height: 16.1111111111rem;
+  }
 }
+
 @media screen and (max-width: 768px) {
-  .team__list--desktop {
+  .team__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 0;
-    overflow: hidden;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .team__content-block {
-    height: 22.5rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .team__content-block {
-    height: 16.1111111111rem;
+    margin-left: 20px;
   }
 }
 
