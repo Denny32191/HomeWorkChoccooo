@@ -1,0 +1,25 @@
+.acco-menu-section {
+  background: url();
+  position: relative;
+}
+
+.acco-menu {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.acco-menu__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.acco-menu__item {
+  background: url();
+  width: 0;
+  position: relative;
+  overflow: hidden;
+}

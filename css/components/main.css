@@ -3055,3 +3055,91 @@ body.compensate-for-scrollbar {
     max-width: calc(100% - 10px);
   }
 }
+.menu {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__title {
+  position: absolute;
+  margin-bottom: 765px;
+  left: 20px;
+}
+
+.menu-acco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  background: url("./../../img/team/63eaaa8d5c44c52da0c82318b49a9f67.jpeg");
+}
+
+.menu-acco__line {
+  border: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  height: 100%;
+}
+
+.menu-acco__trigger {
+  border: 1px solid;
+  background: url("./../../img/team/Slide.png");
+  position: relative;
+  width: 80px;
+}
+
+.menu-acco__trigger-text {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  -webkit-transform: rotate(-90deg) translate(-50%, -50%);
+          transform: rotate(-90deg) translate(-50%, -50%);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  white-space: nowrap;
+}
+
+.menu-acco__content {
+  width: 0;
+  padding: 0px;
+  opacity: 1;
+  overflow: hidden;
+  -webkit-filter: grayscale(90%);
+          filter: grayscale(90%);
+  -webkit-filter: contrast(60%);
+          filter: contrast(60%);
+}
+
+.menu-acco__line_active > .menu-acco__content {
+  width: 300px;
+  height: 766px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  opacity: 1;
+  z-index: 10;
+}
+
+.menu-avatar {
+  background: url("./../../img/team/Slide (1).png");
+}
+
+.menu-avatar__two {
+  background: url("./../../img/team/Slide (2).png");
+}
