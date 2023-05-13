@@ -147,7 +147,6 @@
     @include tablets{
         
     }
-
 }
 
 .reviews__switcher {
@@ -155,15 +154,25 @@
     justify-content: center;
     @include tablets{
         z-index: -100;
-        margin-top: 80px;
+        margin-top: 60px;
     }
-    
+    @include phones{
+        margin-top: 100px;
+    }
 
 }
 
 .review__item--active {
     z-index: 100;
+    @include phones{
+        height: 410px;
+        z-index: 100;
+    }
 }
 .review__item{
     z-index: -100;
+    @include phones{
+
+       z-index: -1000;
+    }
 }

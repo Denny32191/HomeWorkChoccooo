@@ -895,16 +895,32 @@ footer {
 @media screen and (max-width: 768px) {
   .reviews__switcher {
     z-index: -100;
-    margin-top: 80px;
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__switcher {
+    margin-top: 100px;
   }
 }
 
 .review__item--active {
   z-index: 100;
 }
+@media screen and (max-width: 480px) {
+  .review__item--active {
+    height: 410px;
+    z-index: 100;
+  }
+}
 
 .review__item {
   z-index: -100;
+}
+@media screen and (max-width: 480px) {
+  .review__item {
+    z-index: -1000;
+  }
 }
 
 .interactive-avatar {
@@ -3055,7 +3071,11 @@ body.compensate-for-scrollbar {
     max-width: calc(100% - 10px);
   }
 }
-.menu {
+.accordion-menu {
+  width: 100%;
+}
+
+.accordion-menu {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3065,15 +3085,10 @@ body.compensate-for-scrollbar {
           justify-content: flex-end;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
 .menu__title {
   position: absolute;
-  margin-bottom: 765px;
+  height: 80%;
+  width: 12%;
   left: 20px;
 }
 
@@ -3120,6 +3135,7 @@ ul {
   padding: 0px;
   opacity: 1;
   overflow: hidden;
+  background: rgba(51, 53, 55, 0.8980392157);
   -webkit-filter: grayscale(90%);
           filter: grayscale(90%);
   -webkit-filter: contrast(60%);
@@ -3128,7 +3144,6 @@ ul {
 
 .menu-acco__line_active > .menu-acco__content {
   width: 300px;
-  height: 766px;
   padding: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -3137,6 +3152,7 @@ ul {
 }
 
 .menu-avatar {
+  height: auto;
   background: url("./../../img/team/Slide (1).png");
 }
 

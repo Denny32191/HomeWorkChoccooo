@@ -1,24 +1,20 @@
-.section{
-  // height: 300px;
-  
+.accordion-menu{
+  width: 100%;
 }
 
-.menu{
+.accordion-menu{
   position: relative;
   display: flex;
   justify-content: flex-end;
   
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
+
 
 .menu__title {
   position: absolute;
-  margin-bottom: 765px;
+  height: 80%;
+  width: 12%;
   left: 20px;
 }
 
@@ -59,6 +55,8 @@ ul {
   padding: 0px;
   opacity: 1;
   overflow: hidden;
+  background:  #333537E5;
+  ;
   filter: grayscale(90%);
   filter: contrast(60%)
   
@@ -66,13 +64,13 @@ ul {
 
 .menu-acco__line_active > .menu-acco__content {
   width: 300px;
-  height: 766px;
   padding: 20px;
   box-sizing: border-box;
   opacity: 1;
   z-index: 10;
 }
 .menu-avatar{
+  height: auto;
   background: url("./../../img/team/Slide\ \(1\).png");
 }
 .menu-avatar__two{
