@@ -1,0 +1,18 @@
+{
+  "name": "homeworkchoccoo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jquery-3.6.4.min.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-email-remove-unused-css": "^5.0.12"
+  }
+}
