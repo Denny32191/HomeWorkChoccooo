@@ -1,3 +1,6 @@
+.container-video{
+  width: 940px;
+}
 .player {
     position: relative;
     display: block;
@@ -9,12 +12,12 @@
     }
   }
 .section__vieo-text{
-    display: flex;
-    position: absolute;
-    height: 58px;
-    bottom: 21%;
-    font-size: 48px;
-    font-weight: bold;
+  display: flex;
+  position: absolute;
+  height: 58px;
+  bottom: 100px;
+  font-size: 48px;
+  font-weight: bold;
 }
   .player__splash {
     position: absolute;
@@ -97,6 +100,7 @@
     position: relative;
     flex: 1;
     margin: 0 rem(15px);
+    color: yellow;
   
     &:before {
       content: "";

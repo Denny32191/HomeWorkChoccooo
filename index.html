@@ -12,7 +12,7 @@
 
 <body>
   <div class="wrapper">
-    <div class="maincontent">
+    <div class="maincontent" data-sidemenu-theme="white" data-section-id="hero">
       <section class="hero hero-img">
         <div class="container hero__container">
           <header class="header">
@@ -95,7 +95,7 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section data-sidemenu-theme="black"  data-section-id="benefits" class="section benefits-section">
         <div class="container container-first">
           <div class="headline">
             <h2 class="section__title headline__title">Почему surfboard?</h2>
@@ -347,7 +347,7 @@
           </div>
         </div>
       </secion>
-      <section class="section team-section">
+      <section data-sidemenu-theme="black" data-section-id="team" class="section team-section">
         <div class="container team__container">
           <h1 class="title title--team">КОМАНДА</h1>
 
@@ -545,7 +545,7 @@
           </li>
         </ul>
       </section>
-      <section class="section  accordion-menu">
+      <section   data-sidemenu-theme="white" data-section-id="menu" class="section  accordion-menu">
         <div class="section__title menu__title">Меню</div>
         <ul class="menu-acco">
           <li class="menu-acco__line">
@@ -580,7 +580,7 @@
           </li>
         </ul>
       </section>
-      <section class="section">
+      <section data-sidemenu-theme="black" data-section-id="reviews" class="section reviews">
         <div class="container container-first">
           <h2 class="section__title">Отзывы</h2>
           <div class="reviews">
@@ -658,7 +658,7 @@
         </div>
       </section>
       <section data-sidemenu-theme="black" data-section-id="player" class="section player-section">
-        <div class="container">
+        <div class="container container-video">
           <h2 class="section__vieo-text">Как мы работаем</h2>
           <div class="player-section__container">
             <div class="player">
@@ -680,7 +680,7 @@
           </div>
         </div>
       </section>
-      <section class="section form-img">
+      <section data-sidemenu-theme="white" data-section-id="order" class="section form-img">
         <div class="container container-bg">
           <h2 class="section__title order__title">ЗАКАЖИТЕ ДОСТАВКУ</h2>
           <form class="form" id="form">
@@ -758,19 +758,6 @@
       </section>
     </div>
   </div>
-  <nav class="fixed-menu">
-    <ul class="fixed-menu__list">
-      <li class="fixed-menu__item fixed-menu__item--active"> <a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a></li>
-    </ul>
-  </nav>
   <div class="burger-menu">
     <a href="#" class="burger-menu__close">
       <svg class="burger-menu__close-img">
@@ -839,6 +826,19 @@
       </ul>
     </div>
   </footer>
+  <nav class="fixed-menu">
+    <ul class="fixed-menu__list">
+      <li class="fixed-menu__item fixed-menu__item--active"> <a href="#" data-scroll-to="hero" class="fixed-menu__link"> </a> </li>
+      <li class="fixed-menu__item"> <a href="#" data-scroll-to="benefits" class="fixed-menu__link"> </a> </li>
+      <li class="fixed-menu__item"> <a href="#" data-scroll-to="products" class="fixed-menu__link"> </a> </li>
+      <li class="fixed-menu__item"> <a href="#" data-scroll-to="team" class="fixed-menu__link"> </a> </li>
+      <li class="fixed-menu__item"> <a href="#" data-scroll-to="menu" class="fixed-menu__link"> </a> </li>
+      <li class="fixed-menu__item"> <a href="#" data-scroll-to="reviews" class="fixed-menu__link"> </a> </li>
+      <li class="fixed-menu__item"> <a href="#" data-scroll-to="player" class="fixed-menu__link"> </a> </li>
+      <li class="fixed-menu__item"> <a href="#" data-scroll-to="order" class="fixed-menu__link"> </a> </li>
+      <li class="fixed-menu__item"> <a href="#" data-scroll-to="map" class="fixed-menu__link"> </a> </li>
+    </ul>
+  </nav>
   <div class="modal" id="modal">
     <div class="modal__container">
       <div class="modal__content">Сообщение отправлено</div>
@@ -847,6 +847,7 @@
       </div>
     </div>
   </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
@@ -862,6 +863,7 @@
     type="text/javascript">
     </script>
   <script src="https://www.youtube.com/iframe_api"></script>>
+  <script src="./script/ops.js"></script>
   <script src="./script/main.js"></script>
   <script src="./script/map.js"></script>
   <script src="./script/team.js"></script>
