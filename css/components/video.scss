@@ -1,5 +1,5 @@
 .container-video{
-width: 95%;
+  width: 100%;
 }
 .player {
     position: relative;
@@ -25,9 +25,11 @@ width: 95%;
     left: 0;
     right: 0;
     bottom: 0;
+    background: url("./images/decor/splashscreen.jpg") center center / cover no-repeat;
     cursor: pointer;
   
     &:before {
+      content: url("./images/icons/play-big.png");
       position: absolute;
       top: 50%;
       left: 50%;

@@ -505,7 +505,6 @@ footer {
 
 .section {
   height: 100vh;
-  width: 100%;
   min-height: 36.1111111111rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -546,7 +545,6 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 95%;
 }
 
 .headline {
@@ -1227,23 +1225,23 @@ footer {
   right: 3%;
   z-index: 100;
   color: #fff;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 @media screen and (max-width: 768px) {
   .fixed-menu {
     display: none;
   }
 }
-.fixed-menu--shadowed {
-  color: #000;
+@media screen and (max-width: 480px) {
+  .fixed-menu {
+    display: none;
+  }
 }
 
 .fixed-menu__item {
   margin-bottom: 0.2777777778rem;
 }
 .fixed-menu__item--active .fixed-menu__link {
-  border-color: currentColor;
+  border: 0.0555555556rem solid;
 }
 
 .fixed-menu__link {
@@ -1255,20 +1253,28 @@ footer {
   position: relative;
 }
 .fixed-menu__link:hover {
-  border-color: currentColor;
+  border: 0.0555555556rem solid;
 }
 .fixed-menu__link:before {
   content: "";
   display: block;
-  width: 6px;
-  height: 6px;
+  width: 0.3333333333rem;
+  height: 0.3333333333rem;
   border-radius: 50%;
-  background: currentColor;
+  background: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.fixed-menu--shadowed {
+  color: #666666;
+}
+
+.fixed-menu__link--shadowed:before {
+  background: #666666;
 }
 
 .burger {
@@ -1378,7 +1384,6 @@ footer {
 
 .section {
   height: 100vh;
-  width: 100%;
   min-height: 36.1111111111rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1923,7 +1928,6 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 95%;
 }
 .team {
   display: -webkit-box;
@@ -2328,7 +2332,7 @@ footer {
 }
 
 .container-video {
-  width: 95%;
+  width: 100%;
 }
 
 .player {
@@ -2360,9 +2364,11 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
+  background: url("./images/decor/splashscreen.jpg") center center/cover no-repeat;
   cursor: pointer;
 }
 .player__splash:before {
+  content: url("./images/icons/play-big.png");
   position: absolute;
   top: 50%;
   left: 50%;
