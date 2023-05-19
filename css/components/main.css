@@ -96,12 +96,6 @@ img {
 .container {
   margin: 0 auto;
   max-width: 940px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .contacts {
@@ -2331,10 +2325,6 @@ footer {
   height: 100%;
 }
 
-.container-video {
-  width: 100%;
-}
-
 .player {
   position: relative;
   display: block;
@@ -2348,14 +2338,9 @@ footer {
 }
 
 .section__vieo-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  height: 58px;
-  bottom: 100px;
   font-size: 48px;
   font-weight: bold;
+  margin-left: 130px;
 }
 
 .player__splash {

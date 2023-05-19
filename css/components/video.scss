@@ -1,6 +1,4 @@
-.container-video{
-  width: 100%;
-}
+
 .player {
     position: relative;
     display: block;
@@ -12,12 +10,9 @@
     }
   }
 .section__vieo-text{
-  display: flex;
-  position: absolute;
-  height: 58px;
-  bottom: 100px;
   font-size: 48px;
   font-weight: bold;
+  margin-left: 130px;
 }
   .player__splash {
     position: absolute;
