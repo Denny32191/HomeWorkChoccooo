@@ -1,0 +1,40 @@
+.slider-container {
+  width: 940px;
+}
+
+.body_closed {
+  height: 100%;
+  overflow: hidden;
+}
+
+.team__content {
+  height: auto;
+  max-height: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.team__item_active, .team__content {
+  display: block;
+  max-height: 100%;
+}
+
+.slider {
+  width: 100%;
+  left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.slider__item {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.form__input_error {
+  border-color: red;
+}
+
+.modal_visible {
+  display: block;
+}

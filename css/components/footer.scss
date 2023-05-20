@@ -1,0 +1,23 @@
+.footer {
+  margin: 0 auto;
+  width: 100%;
+  min-height: rem(90px);
+  padding-top: rem(17px);
+
+  &__container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablets {
+      padding-left: 6%;
+      padding-right: 5%;
+    }
+
+    @include phones {
+      flex-direction: column;
+    }
+  }
+}
