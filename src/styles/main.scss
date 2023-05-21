@@ -1,60 +1,57 @@
-$containerWidth: 940px;
+$container-Width: 940px;
 $baseFontSize: 18px;
+
+@import "./blocks/media";
 
 //breakpoints
 $tablets: 768px;
 $phones: 480px;
 
-@import "media.scss";
-
 //colors
 $yellow: #FFD517;
 $liteYellow: #FEDB3F;
-$darkGrey: #292929;
-$grey: #F2F5F4;
 
-//z-indexes
+
+//z-index
 $z-fixed-menu: 100;
 
 //normalize
-// @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css";
+// @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 
-//setups
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800&display=swap');
-
-@import "layout.scss";
+//setup
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800&display=swap");
+@import "./blocks/layout";
 
 //blocks
 @import "./blocks/*.scss";
 
-// @import "./blocks/_ection.scss";
-// @import "./blocks/header.scss";
+
+//components
 // @import "./blocks/hero.scss";
-// @import "./blocks/logo.scss";
-// @import "./blocks/menu.scss";
-// @import "./blocks/phone-number.scss";
-// @import "./blocks/features.scss";
-// @import "./blocks/feature.scss";
-// @import "./blocks/btn.scss";
-// @import "./blocks/benefits-block.scss";
-// @import "./blocks/title.scss";
-// @import "./blocks/benefits.scss";
-// @import "./blocks/benefit.scss";
-// @import "./blocks/products.scss";
-// @import "./blocks/team.scss";
-// @import "./blocks/dropdown.scss";
-// @import "./blocks/menu-acco.scss";
-// @import "./blocks/review.scss";
-// @import "./blocks/video.scss";
-// @import "./blocks/interactive-avatar.scss";
-// @import "./blocks/order.scss";
-// @import "./blocks/form.scss";
-// @import "./blocks/radio.scss";
-// @import "./blocks/map.scss";
-// @import "./blocks/footer.scss";
-// @import "./blocks/contacts.scss";
-// @import "./blocks/social.scss";
-// @import "./blocks/fixed-menu.scss";
-// @import "./blocks/hamburger.scss";
-// @import "./blocks/burger-menu.scss";
-// @import "./blocks/modal.scss";
+// @import "./blocks/header";
+// @import "./blocks/features";
+// @import "./blocks/feature";
+// @import "./blocks/btn";
+// @import "./blocks/section";
+// @import "./blocks/headline";
+// @import "./blocks/benefits";
+// @import "./blocks/benefit";
+// @import "./blocks/reviews";
+// @import "./blocks/interactive-avatar";
+// @import "./blocks/form";
+// @import "./blocks/fixed";
+// @import "./blocks/radio";
+// @import "./blocks/fixed-menu";
+// @import "./blocks/hamburger";
+// @import "./blocks/footer";
+// @import "./blocks/social";
+// @import "./blocks/section";
+// @import "./blocks/style";
+// @import "./blocks/dropdown";
+// @import "./blocks/product-menu";
+// @import "./blocks/burger-menu";
+// @import "./blocks/team";
+// @import "./blocks/modal";
+// @import "./blocks/acco-menuproduct";
+// @import "./blocks/map";
+// @import "./blocks/video";

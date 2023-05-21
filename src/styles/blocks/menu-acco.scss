@@ -1,6 +1,14 @@
-.menu-acco {
+
+  .menu-acco{
     position: relative;
-    background: url("../src/img/slider-menu.png") center center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    transform: rotate(90deg);
+
+  }
+  .menu-acco {
+    position: relative;
+    background: url("./../../images/ingvar.png") center center/cover no-repeat;
     // background: url('./img/slider-menu.png') center center/cover no-repeat;
   
   }
@@ -97,4 +105,4 @@
       padding-left: rem(15px);
       padding-right: rem(15px);
     }
-  }
+}
