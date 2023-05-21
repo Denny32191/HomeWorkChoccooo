@@ -1,16 +1,11 @@
-.features{
+.features {
     display: flex;
-}
-.features__item {
-    margin-right: rem(32px);
-
-    &:last-child{
+  
+    &__item {
+      margin-right: rem(34px);
+    
+      &:last-child {
         margin-right: 0;
+      }
     }
-    @include tablets{
-        display: none;
-    }
-    @include phones {
-        display: none;
-    }
-    }
+  }

@@ -20,11 +20,6 @@
       opacity: 1;
     }
   }
-  .dropdown__features{
-    &:hover{
-      background: #3465A3;
-    }
-  } 
   
   .dropdown__features-content {
     display: flex;
@@ -32,12 +27,11 @@
     align-items: center;
     justify-content: center;
     color: #fff;
-
   }
   
   .dropdown__icon-main {
     margin-bottom: rem(10px);
-    width: 38px;
+    width: rem(38px);
     height: 38px;
     color: #fff;
   }
@@ -116,5 +110,4 @@
   .dropdown_param {
     text-align: right;
     font-weight: 400;
-    font-weight: bold;
   }

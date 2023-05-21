@@ -1,86 +1,29 @@
-.header{
+.header {
     display: flex;
-
-    @include phones {
-        background: #1968B1;
-    }
-}
-.header__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 26px;
-    width: 95%;
-    
-    @include phones{
-        padding-top: 6px;
-    }
-
-}
-
-.phone-number.header__phone-number {
+    color: #fff;
+    padding-top: rem(24px);
+    margin-bottom: rem(140px);
+  
     @include tablets {
-        display: none;
+      background-color: #1968B1;
+      min-height: rem(92px);
+      margin-bottom: 0;
     }
-
-}
-
-.menu__list{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-right: 20px;
-}
-.menu__item{
-    margin-right: rem(22px);
-
-    &:last-child{
-        margin-right:0;
+  
+    &__container {
+      margin: 0 auto;
+      width: 95%;
+      max-width: $containerWidth;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+        @include tablets {
+          padding: 0 rem(24px) rem(21px) rem(34px);
+        }
+  
+        @include phones {
+          padding: 0 rem(15px) rem(21px) rem(14px);
+        }
     }
-    
-}
-
-.phone-number{
-    font-size: rem(24px);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-
-}
-.phone-number__icon-elem{
-    width: rem(12px);
-    height: rem(12px);
-    margin-right: rem(6px);
-}
-.menu__link{
-    text-decoration: none;
-    font-style: bold;
-    white-space: nowrap;
-    
-}
-.menu{
-    @include tablets {
-        display: none;
-        margin: 0 30px;
-        padding-top: 5px;
-    }
-}
-.phone-number__text{
-    white-space: nowrap;
-}
-.phone-number__icon{
-    flex-shrink: 0;
-}
-.menu__list{
-    justify-content: center;
-}
-.logo-header{
-    width: 56px;
-    height: 40px;
-    color: white;
-}
-.phonewhite{
-    width: 12px;
-    height: 12px;
-    margin-right: 6px;
-}
+  }
